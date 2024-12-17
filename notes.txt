@@ -1,0 +1,29 @@
+NixOS helpful command reference
+
+## Rebuild the system applying all new config changes
+nixos-rebuild switch
+
+## Rebuilding on flake based configs
+# cd into the directory where you keep your config files
+cd ~/nixos-files
+# then run the rebuild command specifing the host you wish to use
+# TIP: if your host subdirectory is named the same as your system hostname
+# then you can omit specifing the host
+
+nixos-rebuild switch --flake ./relative/location/of/configs#hostname
+
+## Rebuild you system applying all changes but dont add it to the boot loader
+# Useful for testing changes that might cause breakage
+nixos-rebuild test
+
+## Clean out older configurations 
+# more options are probably available in the man page
+nix-collect-garbage --delete-older-than 15d
+
+## Updating Packages!!! (on flake based systems)
+# first update the flake.lock file so that it references the updated software
+
+nix flake update 
+
+# 
+
