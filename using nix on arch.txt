@@ -1,0 +1,8 @@
+So far ive found these starting points 
+https://www.youtube.com/watch?v=5Dd7rQPNDT8
+https://tech.aufomm.com/my-nix-journey-use-nix-with-ubuntu/
+
+also consider rewatching the original tutorials i was following 
+while paying special attention to the areas where differences are mentioned
+related to non-nixOS systems, and how that changes our approch to the configuration
+https://www.youtube.com/watch?v=rEovNpg7J0M&list=PLko9chwSoP-15ZtZxu64k_CuTzXrFpxPE&index=20
